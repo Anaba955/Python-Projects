@@ -23,15 +23,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
-
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-direction = input("You find yourself at the edge of a dense jungle, where the path splits into two directions. Do you want to go 'left' into the dark, twisted trees or 'right' towards the sunny, open trail? ").lower()
+# Write your code below this line 👇
+
+direction = input("You find yourself at the edge of a dense jungle, where the path splits into two directions. Do you want to go 'left' into the dark, twisted trees or 'right' towards the sunny, open trail? \n").lower()
 if direction == 'left':
-    choice = input("You carefully navigate through the jungle and come across a wide, fast-flowing river. Do you want to 'swim' across or 'wait' for a better opportunity? ").lower()
+    choice = input("You carefully navigate through the jungle and come across a wide, fast-flowing river. Do you want to 'swim' across or 'wait' for a better opportunity? \n").lower()
     if choice == 'wait':
-        door = input("As you wait, you discover a hidden path that leads to three ancient doors, each a different color. Which color do you choose: 'red', 'blue', or 'yellow'? ").lower()
+        door = input("As you wait, you discover a hidden path that leads to three ancient doors, each a different color. Which color do you choose: 'red', 'blue', or 'yellow'? \n").lower()
         if door == 'yellow':
             print("You push open the yellow door and find a room filled with gold and jewels. Congratulations, you found the treasure!")
         elif door == 'red':

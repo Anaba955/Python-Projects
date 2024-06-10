@@ -12,6 +12,7 @@ all_turtles = []
 # Creating 6 turtle objects
 for turtle_index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
+    new_turtle.speed("fastest")
     new_turtle.color(colors[turtle_index])
     new_turtle.penup()
     new_turtle.goto(x=-230, y=y_positions[turtle_index])
@@ -28,10 +29,12 @@ while is_race_on:
         if turtle.xcor() > 230:
             is_race_on = False
             winning_color = turtle.pencolor()
-            if turtle.color() == user_bet:
+            if turtle.pencolor() == user_bet:
                 print(f"You've won! {winning_color} turtle is the winner!")
+                break
             else:
                 print(f"You lose! {winning_color} turtle is winner!")
+                break
 
 
 screen.exitonclick()

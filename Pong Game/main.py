@@ -1,4 +1,4 @@
-from turtle import Screen
+from turtle import Screen, Turtle
 from paddle import Paddle
 from ball import Ball
 from scoreboard import Scoreboard
@@ -9,6 +9,21 @@ screen.title("Pong")
 screen.bgcolor("black")
 screen.setup(width=800, height=600)
 screen.tracer(0)
+
+# center line
+line = Turtle()
+line.penup()
+line.color("white")
+line.shape("square")
+line.hideturtle()
+line.goto(0, -300)
+line.setheading(90)
+
+while line.ycor() < 300:
+    line.pendown()
+    line.forward(20)
+    line.penup()
+    line.forward(20)
 
 
 right_paddle = Paddle((350, 0))

@@ -25,8 +25,8 @@ while game_is_on:
 
     # Detect success
     if player.is_at_finish_line():
-        car_manager.increase_level()
         player.start()
+        car_manager.increase_level()
         score.level_up()
 
     # Detect collision with car

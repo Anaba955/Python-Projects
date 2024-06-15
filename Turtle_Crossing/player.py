@@ -21,7 +21,7 @@ class Player(Turtle):
         self.forward(MOVE_DISTANCE)
 
     def is_at_finish_line(self):
-        if self.ycor() == 280:
+        if self.ycor() > FINISH_LINE_Y:
             return True
         else:
             return False
